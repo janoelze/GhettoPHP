@@ -3,9 +3,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
 		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="<?php print get_conf('base_url'); ?>assets/style/style.css">
-		<script type="text/javascript" src="<?php print get_conf('base_url'); ?>assets/js/app.js"></script>
+		<title><?php print get_conf('project_name'); ?> | <?php print get_conf('project_version'); ?></title>
+		<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+		<script type="text/javascript" src="assets/js/app.js"></script>
 	</head>
 	<body>
 		<h1>It works!</h1>
