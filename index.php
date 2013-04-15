@@ -5,7 +5,7 @@ require 'Slim/Slim.php';
 
 $app = new Slim();
 
-require 'inc/config.php';
+$app->less->watch('assets/style/source.less','assets/style/style.css');
 
 $app->get( '/', function() use ( $app ) {
         $app->render( 'default.php', array(

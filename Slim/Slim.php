@@ -165,6 +165,9 @@ class Slim {
         require_once dirname(__FILE__) . '/Extensions/Store/Store.php';
         $this->store = new Store();
 
+        require_once dirname(__FILE__) . '/Extensions/Less/Less.php';
+        $this->less = new Less();
+
         //Determine application mode
         $this->getMode();
 
