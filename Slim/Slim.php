@@ -161,6 +161,10 @@ class Slim {
         $this->add(new Slim_Middleware_Flash());
         $this->add(new Slim_Middleware_MethodOverride());
 
+        // own extensions
+        require_once dirname(__FILE__) . '/Extensions/Store/Store.php';
+        $this->store = new Store();
+
         //Determine application mode
         $this->getMode();
 
