@@ -1,4 +1,51 @@
-PHP-App-Skeleton
+# Junbi
 ================
 
-PHP App Skeleton
+Junbi is a ready-to-go-everything-i-need-php-setup based on [Slim](http://slimframework.com).
+
+## Key-Value Store
+
+### Storing Data
+
+```
+$app = new Slim();
+
+$table = "users";
+$key = "jan";
+$value = array( "age" => 21);
+
+$app->store->set( $table, $key, $value );
+``` 
+
+### Retrieving Data
+
+```
+$app = new Slim();
+
+$table = "users";
+$key = "jan";
+
+$app->store->get( $table, $key );
+``` 
+
+The key-value store is powered by [Flintstone](http://www.xeweb.net/flintstone/).
+
+## LESS Parsing
+
+Define In- and Output paths for LESS files.
+
+```
+$app = new Slim();
+
+$app->less->compile('assets/style/source.less','assets/style/style.css');
+``` 
+
+## Configuration files
+
+All ```.ini``` files placed in the ```/app/conf/```-directory get loaded upfront. And are accessible via ```$app->config```.
+
+```
+$app = new Slim();
+
+$template_path = $app->conf['template_path'];
+``` 
