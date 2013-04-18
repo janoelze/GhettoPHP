@@ -3,11 +3,11 @@
 class Store {
     function __construct() {
         require_once 'flintstone.class.php';
-        $this->db = new Flintstone( array( 'dir' => dirname( __FILE__ ) . '/data/' ) );
+        $this->db = new Flintstone( array( 'dir' => ROOT_PATH . '/app/data/' ) );
     }
     public function set( $table, $key, $value ) {
         $t = $this->db->load( $table );
-        if ($t->set( $key, $value )) {
+        if ( $t->set( $key, $value ) ) {
             return true;
         }
     }
