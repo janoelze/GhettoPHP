@@ -7,7 +7,7 @@ $app->less->watch( 'app/assets/style/source.less', 'app/assets/style/style.css' 
 
 $app->get( '/', function() use ( $app ) {
 
-        // The function "hello_world()" is available because all files
+        // The function "get_ip()" is available because all files
         // from the directory "/app/src" are automatically loaded.
         $user_ip = get_ip();
 
