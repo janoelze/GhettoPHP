@@ -151,6 +151,9 @@ class Slim {
      * @return  void
      */
     public function __construct( $userSettings = array() ) {
+
+        define('ROOT_PATH', realpath('.'));
+        
         //Setup Slim application
         $this->environment = Slim_Environment::getInstance();
         $this->request = new Slim_Http_Request($this->environment);
@@ -167,6 +170,15 @@ class Slim {
 
         require_once dirname(__FILE__) . '/Extensions/Less/Less.php';
         $this->less = new Less();
+
+        // loading all src-files
+        $dir = ROOT_PATH . "/app/src/";
+        $dh  = opendir($dir);
+        while (false !== ($filename = readdir($dh))) {
+            if ( $filename != '.' && $filename != '..') {
+                require_once $dir . $filename;
+            }
+        }
 
         //Determine application mode
         $this->getMode();
@@ -237,7 +249,7 @@ class Slim {
             'log.level' => 4,
             'log.enabled' => true,
             //View
-            'templates.path' => './templates',
+            'templates.path' => 'app/templates',
             'view' => 'Slim_View',
             //Cookies
             'cookies.lifetime' => '20 minutes',

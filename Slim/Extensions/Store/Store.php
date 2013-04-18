@@ -5,7 +5,7 @@ class Store {
         require_once 'flintstone.class.php';
         $this->db = new Flintstone( array( 'dir' => dirname( __FILE__ ) . '/data/' ) );
     }
-    public function save( $table, $key, $value ) {
+    public function set( $table, $key, $value ) {
         $t = $this->db->load( $table );
         if ($t->set( $key, $value )) {
             return true;

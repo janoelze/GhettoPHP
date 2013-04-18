@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteRule ^assets/.*$ - [PT]
+RewriteRule ^app/assets/.*$ - [PT]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [QSA,L]
