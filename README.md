@@ -8,8 +8,6 @@ Junbi is a ready-to-go-everything-i-need-php-setup based on [Slim](http://slimfr
 ### Storing Data
 
 ```
-$app = new Slim();
-
 $table = "users";
 $key = "jan";
 $value = array( "age" => 21);
@@ -20,8 +18,6 @@ Store::set( $table, $key, $value );
 ### Retrieving Data
 
 ```
-$app = new Slim();
-
 $table = "users";
 $key = "jan";
 
