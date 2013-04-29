@@ -14,8 +14,8 @@ $table = "users";
 $key = "jan";
 $value = array( "age" => 21);
 
-$app->store->set( $table, $key, $value );
-``` 
+Store::set( $table, $key, $value );
+```
 
 ### Retrieving Data
 
@@ -25,10 +25,8 @@ $app = new Slim();
 $table = "users";
 $key = "jan";
 
-$app->store->get( $table, $key );
-``` 
-
-The key-value store is powered by [Flintstone](http://www.xeweb.net/flintstone/).
+Store::get( $table, $key );
+```
 
 ## LESS Parsing
 
@@ -38,7 +36,7 @@ Define In- and Output paths for LESS files.
 $app = new Slim();
 
 $app->less->compile('assets/style/source.less','assets/style/style.css');
-``` 
+```
 
 ## Configuration files
 
