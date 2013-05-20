@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 	<head>
-		<?php include('app/templates/partial_head.php'); ?>
+		<?php include('app/views/partials/head.php'); ?>
 	</head>
 	<body>
 		<h1>It works!</h1>
