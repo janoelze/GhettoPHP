@@ -249,7 +249,7 @@ class Slim {
             'log.level' => 4,
             'log.enabled' => true,
             //View
-            'templates.path' => 'app/templates',
+            'templates.path' => 'app/views',
             'view' => 'Slim_View',
             //Cookies
             'cookies.lifetime' => '20 minutes',
