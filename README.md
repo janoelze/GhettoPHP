@@ -1,5 +1,4 @@
 # Junbi
-___
 
 Junbi is a ready-to-go-everything-i-need-php-setup based on [Slim](http://slimframework.com).
 
