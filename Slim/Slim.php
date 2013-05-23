@@ -171,6 +171,9 @@ class Slim {
         require_once dirname(__FILE__) . '/Extensions/Less/Less.php';
         $this->less = new Less();
 
+        require_once dirname(__FILE__) . '/Extensions/Config/Config.php';
+        $this->c = new Config();
+
         // loading all src-files
         $dir = ROOT_PATH . "/app/src/";
         $dh  = opendir($dir);

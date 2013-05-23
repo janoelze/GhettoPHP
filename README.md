@@ -35,10 +35,10 @@ $app->less->compile('assets/style/source.less','assets/style/style.css');
 
 ## Configuration files
 
-All ```.ini``` files placed in the ```/app/conf/```-directory get loaded upfront. And are accessible via ```$app->config```.
+All ```.ini``` files placed in the ```/app/config/```-directory get loaded upfront. And are accessible via ```Config::get();```.
 
 ```
-$app = new Slim();
-
-$template_path = $app->conf['template_path'];
+$base_url = Config::get('application.base_url');
+$base_url = Config::get('application.app_name');
 ``` 
+In this case "application" refers to a config-file in the /app/config/ folder and "base_url" is a variable in the config-file.
