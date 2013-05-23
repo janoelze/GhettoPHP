@@ -2,6 +2,20 @@
 
 Junbi is a ready-to-go-everything-i-need-php-setup based on [Slim](http://slimframework.com).
 
+## Routing
+
+See Slim's [documentation on Routing](http://docs.slimframework.com/#Routing-Overview).
+
+```
+require 'Slim/Slim.php';
+$app = new Slim();
+
+$app->get( '/', function() use ( $app ) {
+	$app->render( 'default.php', array() );
+});
+
+$app->run();
+```
 ## Key-Value Store
 
 ### Storing Data
@@ -39,6 +53,6 @@ All ```.ini``` files placed in the ```/app/config/```-directory get loaded upfro
 
 ```
 $base_url = Config::get('application.base_url');
-$app_name = Config::get('application.app_name');
+$base_url = Config::get('application.app_name');
 ``` 
 In this case "application" refers to a config-file in the /app/config/ folder and "base_url" is a variable in the config-file.
