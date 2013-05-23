@@ -53,6 +53,6 @@ All ```.ini``` files placed in the ```/app/config/```-directory get loaded upfro
 
 ```
 $base_url = Config::get('application.base_url');
-$base_url = Config::get('application.app_name');
+$app_name = Config::get('application.app_name');
 ``` 
 In this case "application" refers to a config-file in the /app/config/ folder and "base_url" is a variable in the config-file.
