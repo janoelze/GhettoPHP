@@ -1,0 +1,7 @@
+# Feel free to use TOML!
+# https://github.com/mojombo/toml
+
+TOML_EXAMPLE = [
+    "10.0.0.1",
+    "10.0.0.2"
+]
