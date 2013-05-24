@@ -49,7 +49,7 @@ $app->less->compile('assets/style/source.less','assets/style/style.css');
 
 ## Configuration files
 
-All ```.ini``` files placed in the ```/app/config/```-directory get loaded upfront and are accessible via ```Config::get()```.
+All ```.ini``` and ```.toml``` (https://github.com/mojombo/toml) files placed in the ```/app/config/```-directory get loaded upfront and are accessible via ```Config::get()```.
 
 ```
 $base_url = Config::get('application.base_url');
