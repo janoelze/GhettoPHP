@@ -11,7 +11,11 @@ class Store {
         $db = get_db();
         
         $t = $db->load( $table );
-        return  $t->set( $key, $value );
+        try {
+            return $t->set( $key, $value );
+        }catch( Exception $e ){
+            return false; 
+        }
     }
     public static function get( $table, $key ) {
         $db = get_db();
