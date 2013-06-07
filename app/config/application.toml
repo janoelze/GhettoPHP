@@ -1,0 +1,7 @@
+; The "base_url" should point to the domain and/or 
+; subfolder in which you Junbi is located.
+base_url = "/"
+
+app_name = "Junbi"
+app_version = "1.0"
+app_author = "Jan Oelze"
