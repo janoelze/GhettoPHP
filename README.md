@@ -16,6 +16,10 @@ $app->get( '/', function() use ( $app ) {
 
 $app->run();
 ```
+## Auto-Loadinf source files
+
+All files in /app/src are automatically loaded upfront. 
+
 ## Key-Value Store
 
 ### Storing Data
