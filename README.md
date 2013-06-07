@@ -16,7 +16,7 @@ $app->get( '/', function() use ( $app ) {
 
 $app->run();
 ```
-## Auto-Loadinf source files
+## Auto-Loading source files
 
 All files in /app/src are automatically loaded upfront. 
 
