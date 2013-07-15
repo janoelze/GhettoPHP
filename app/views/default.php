@@ -4,14 +4,9 @@
 		<?php include('app/views/partials/head.php'); ?>
 	</head>
 	<body>
-		<h1>It works!</h1>
-		<p>
-			This is the default.php template-file. It's located in /app/templates/
-		</p>
-		<hr>
-		<i>
-			Request time: <?php print $last_request_time; ?>
-			IP: <?php print $user_ip; ?>
-		</i>
+		<h1 id="logo">Junbi</h1>
+        <p>
+            <pre><?php print json_pretty_print(json_encode(Config::get('application'))); ?></pre>
+        </p>
 	</body>
 </html>

@@ -1,7 +1,8 @@
-; The "base_url" should point to the domain and/or 
-; subfolder in which you Junbi is located.
-base_url = "/"
+# The "base_url" should point to the domain and/or 
+# subfolder in which you Junbi is located.
 
-app_name = "Junbi"
-app_version = "1.0"
-app_author = "Jan Oelze"
+base_url = "http://hyperserious.biz/Junbidev"
+
+name = "Junbi Dev Version"
+version = "1.0"
+author = "Jan Oelze"
