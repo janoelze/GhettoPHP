@@ -5,6 +5,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <link rel="stylesheet" type="text/css" media="screen" href="<?php print Config::get('application.base_url'); ?>/app/assets/style/reset.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<?php print Config::get('application.base_url'); ?>/app/assets/style/960.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="<?php print Config::get('application.base_url'); ?>/app/assets/style/style.css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> 
 <script type="text/javascript" src="<?php print Config::get('application.base_url'); ?>/app/assets/js/app.js"></script>
