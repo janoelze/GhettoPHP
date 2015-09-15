@@ -1,12 +1,11 @@
 <?php
 
-require 'Slim/Slim.php';
-$app = new Slim();
+require 'src/lib/Slim/Slim.php';
+require 'src/lib/rb/rb.php';
 
-$app->less->watch( 'app/assets/style/source.less', 'app/assets/style/style.css' );
+$config = require 'src/config.php';
 
-$app->get( '/', function() use ( $app ) {
-        $app->render( 'default.php', array() );
-    } );
+require 'src/helper.php';
+require 'bootstrap.php';
 
-$app->run();
+?>

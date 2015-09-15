@@ -188,24 +188,8 @@ class Slim {
         $this->add( new Slim_Middleware_Flash() );
         $this->add( new Slim_Middleware_MethodOverride() );
 
-        // own extensions
-        require_once dirname( __FILE__ ) . '/Extensions/Store/Store.php';
-        $this->store = new Store();
-
         require_once dirname( __FILE__ ) . '/Extensions/Less/Less.php';
         $this->less = new Less();
-
-        require_once dirname( __FILE__ ) . '/Extensions/Config/Config.php';
-        $this->c = new Config();
-
-        // loading all src-files
-        $dir = ROOT_PATH . "/app/src/";
-        $dh  = opendir( $dir );
-        while ( false !== ( $filename = readdir( $dh ) ) ) {
-            if ( $filename != '.' && $filename != '..' ) {
-                require_once $dir . $filename;
-            }
-        }
 
         //Determine application mode
         $this->getMode();
